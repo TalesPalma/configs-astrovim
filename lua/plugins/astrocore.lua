@@ -61,6 +61,8 @@ return {
         -- navigate between tabs using Alt + Arrow keys
         ["<A-Right>"] = { ":bnext<CR>", desc = "Próxima aba" },
         ["<A-Left>"] = { ":bprevious<CR>", desc = "Aba anterior" },
+        ["<Tab>"] = { ":bnext<CR>", desc = "Próxima aba" },
+        ["<S-Tab>"] = { ":bprevious<CR>", desc = "Aba anterior" },
 
         -- tables with just a `desc` key will be registered with which-key if it's installed
         -- this is useful for naming menus
