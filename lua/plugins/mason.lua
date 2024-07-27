@@ -12,6 +12,7 @@ return {
       },
     },
   },
+  { "shaunsingh/nord.nvim" },
   {
     "Exafunction/codeium.vim",
     event = "BufEnter",
