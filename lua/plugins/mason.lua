@@ -29,6 +29,11 @@ return {
     },
   },
   {
+    "xiyaowong/transparent.nvim",
+    lazy = false,
+    config = function() require("transparent").setup() end,
+  },
+  {
     "olivercederborg/poimandres.nvim",
     lazy = false,
     priority = 1000,
