@@ -12,7 +12,6 @@ return {
       },
     },
   },
-  { "shaunsingh/nord.nvim" },
   {
     "Exafunction/codeium.vim",
     event = "BufEnter",
@@ -34,28 +33,15 @@ return {
     config = function() require("transparent").setup() end,
   },
   {
-    "olivercederborg/poimandres.nvim",
-    lazy = false,
-    priority = 1000,
-    config = function()
-      require("poimandres").setup {
-        -- leave this setup function empty for default config
-        -- or refer to the configuration section
-        -- for configuration options
-      }
-    end,
-
-    -- optionally set the colorscheme within lazy config
-    init = function() vim.cmd "colorscheme poimandres" end,
-  },
-  {
     "jay-babu/mason-nvim-dap.nvim",
     -- overrides `require("mason-nvim-dap").setup(...)`
     opts = {
       ensure_installed = {
         "python",
-        -- add more arguments for adding more debuggers
+        "rust",
+        "go",
       },
     },
+    config = function() require "mason-nvim-dap" end,
   },
 }
