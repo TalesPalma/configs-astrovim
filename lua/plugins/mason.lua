@@ -27,11 +27,15 @@ return {
       },
     },
   },
+  -- Themes
+  { "Mofiqul/vscode.nvim" },
   {
-    "xiyaowong/transparent.nvim",
+    "folke/tokyonight.nvim",
     lazy = false,
-    config = function() require("transparent").setup() end,
+    priority = 1000,
+    opts = {},
   },
+  -- Dap nvim
   {
     "jay-babu/mason-nvim-dap.nvim",
     -- overrides `require("mason-nvim-dap").setup(...)`
