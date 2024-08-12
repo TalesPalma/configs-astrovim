@@ -9,7 +9,11 @@ return {
       "vim",
       "go",
       "rust",
-      -- add more arguments for adding more treesitter parsers
+      "javascript",
+      "typescript",
+      "tsx",
+      "html",
+      "css",
     },
   },
 }
