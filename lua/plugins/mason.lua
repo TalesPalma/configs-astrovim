@@ -28,6 +28,7 @@ return {
     },
   },
   -- Themes
+  { "Mofiqul/dracula.nvim" },
   { "Mofiqul/vscode.nvim" },
   {
     "folke/tokyonight.nvim",
