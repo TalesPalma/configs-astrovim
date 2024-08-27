@@ -30,6 +30,7 @@ return {
   -- Themes
   { "Mofiqul/dracula.nvim" },
   { "Mofiqul/vscode.nvim" },
+  { "navarasu/onedark.nvim" },
   {
     "folke/tokyonight.nvim",
     lazy = false,
