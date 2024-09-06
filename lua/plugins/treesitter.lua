@@ -16,6 +16,7 @@ return {
       "css",
       "kotlin",
       "prisma",
+      "mod",
     },
   },
 }
