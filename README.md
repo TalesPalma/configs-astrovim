@@ -9,3 +9,5 @@
 - **Visualização de Tipos e Definições:**
   - Pressione `K` para ver o tipo da variável, definições, etc.
 
+- ** Code action menu**
+ Use gd para ver o menu de acionamento de código.
