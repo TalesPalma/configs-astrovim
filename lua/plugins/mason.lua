@@ -49,4 +49,10 @@ return {
     },
     config = function() require "mason-nvim-dap" end,
   },
+  {
+    "leoluz/nvim-dap-go",
+    ft = { "go" },
+    dependencies = "nvim-dap",
+    config = function(_, opts) require("dap-go").setup() end,
+  },
 }
