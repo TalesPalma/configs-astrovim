@@ -55,4 +55,7 @@ return {
     dependencies = "nvim-dap",
     config = function(_, opts) require("dap-go").setup() end,
   },
+  {
+    "Tsuzat/NeoSolarized.nvim",
+  },
 }
