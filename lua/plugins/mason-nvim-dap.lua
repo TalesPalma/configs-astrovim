@@ -1,4 +1,3 @@
--- lua/plugins/mason-nvim-dap.lua
 return {
   "jay-babu/mason-nvim-dap.nvim",
   opts = {
@@ -24,7 +23,7 @@ return {
         local dap = require "dap"
         dap.adapters.lldb = {
           type = "executable",
-          command = "/usr/local/bin/codelldb", -- Substitua pelo caminho onde o codelldb está instalado
+          command = "/usr/local/bin/codelldb", -- Ajuste conforme necessário
           name = "lldb",
         }
         dap.configurations.rust = {
@@ -47,10 +46,10 @@ return {
         local dap = require "dap"
         dap.adapters.go = {
           type = "server",
-          port = 12345,
+          port = "${port}", -- Altere para usar a variável ${port}
           executable = {
             command = "dlv",
-            args = { "dap" },
+            args = { "dap", "-l", "127.0.0.1:${port}", "--log" }, -- Habilitar logs
           },
         }
         dap.configurations.go = {
@@ -58,7 +57,7 @@ return {
             type = "go",
             name = "Debug",
             request = "launch",
-            program = "${file}",
+            program = "${file}", -- Ou "${workspaceFolder}/cmd" se necessário
           },
         }
       end,
